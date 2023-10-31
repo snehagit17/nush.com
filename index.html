@@ -4,33 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nush.Com</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="cat.css">
+    <link rel="stylesheet" href="carou.css">
 </head>
 <body>
 <!--Nav bar section starts-->  
-<section class="Nav-Bar" >
+<section class="Nav" >
+    <img src="images/logo.jpg.png" class="abc" alt="Resturant Logo" width="50%">
     <div class="container">
-        <div class="logo">
-            <img src="images/logo.jpg.png" alt="Resturant Logo" width="50%">
-        </div>
+       
+           
+        
         <div class="menu text-right">
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#" class="navlink">Home</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#" class="navlink">About</a>
                 </li>
                 <li>
-                    <a href="#">Food</a>
+                    <a href="#" class="navlink">Food</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#" class="navlink">Contact</a>
                 </li>
+                <button class="orderbtn">Order Now</button>
             </ul>
         </div>
         <div class="clearfix">
-
         </div>
     </div>
 </section>
@@ -47,7 +51,8 @@
 <!--FOOD SEARCH section ends here-->   
 <!--Categories section starts here-->  
 <section class="categories">
-    <div class="container">
+    <!-- <div class="container">
+        <div class="categoriesdiv">
         <h2 class="text-center">Categories</h2>
         <div class="box-3 float-container">
             <img src="images/burger.jpg" alt="burger" class="img-responsive ">
@@ -61,98 +66,163 @@
             <img src="images/cocktail.1.png" alt="burger" class="img-responsive">
             <h3 class="float-text text-white">Lime</h3>
         </div>
-       
     </div>
+    </div> -->
+
+    <h1 class="cui">Cuisine</h1>
+    <div class="containe">
+              <div class="card">
+                 <div class="card__image">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Salad" />
+                 </div>
+                 <div class="card__info">
+                    <div class="car__info--title">
+                       <h3>Salad</h3>
+                       <p>Fresh & sweet</p>
+                    </div>
+                    <div class="card__info--price">
+                      
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                 </div>
+              </div>
+              <div class="card">
+                 <div class="card__image">
+                    <img src="https://images.pexels.com/photos/840216/pexels-photo-840216.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Fish" />
+                 </div>
+                 <div class="card__info">
+                    <div class="car__info--title">
+                       <h3>Fish</h3>
+                       <p>Fresh & sweet</p>
+                    </div>
+                    <div class="card__info--price">
+                   
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                 </div>
+              </div>
+              <div class="card">
+                 <div class="card__image">
+                    <img src="https://images.pexels.com/photos/4001871/pexels-photo-4001871.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Pizza" />
+                 </div>
+                 <div class="card__info">
+                    <div class="car__info--title">
+                       <h3>Pizza</h3>
+                       <p>Fresh & sweet</p>
+                    </div>
+                    <div class="card__info--price">
+                      
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                 </div>
+              </div>
+              <div class="card">
+                 <div class="card__image">
+                    <img src="https://images.pexels.com/photos/907142/pexels-photo-907142.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Dessert" />
+                 </div>
+                 <div class="card__info">
+                    <div class="car__info--title">
+                       <h3>Dessert</h3>
+                       <p>Fresh & sweet</p>
+                    </div>
+                    <div class="card__info--price">
+                   
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                 </div>
+              </div>
+     </div>
 </section>
 <!--Categories section ends here-->  
 <!--Food menu section starts here--> 
-<section class="food-menu">
-    <div class="container">
-        <h2 class="text-center">Explore Foods</h2>
-        
-            <div class="Food-menu-box">
-                <div class="food-menu-img">
-                    <img src="images/menu-momo.jpg" alt="Garlic Naan" class="img-responsive img-curve">
-                </div>
-                <div class="food-menu-desc">
-                    <h4>Garlic Naan</h4>
-                    <p class="food-price">Rs.22/piece</p>
-                    <p class="food-detail">spicy Gralic butter Naan </p>
-                    <br>
-                    <a href="#" class="button button-primary">Order Now</a>
-                </div>
-            </div>
-            
-        
-        <div class="Food-menu-box">
-            <div class="food-menu-img">
-                <img src="images/brownie.png" alt="Garlic Naan" class="img-responsive img-curve">
-            </div>
-            <div class="food-menu-desc">
-                <h4>hot choclate Brownie</h4>
-                <p class="food-price">Rs.150</p>
-                <p class="food-detail">Sizzling hot chocolate brownie with chocolate icecream </p>
-                <br>
-                <a href="#" class="button button-primary">Order Now</a>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="Food-menu-box">
-            <div class="food-menu-img">
-                <img src="images/friedRice.png" alt="Garlic Naan" class="img-responsive img-curve">
-            </div>
-            <div class="food-menu-desc">
-                <h4>schezwan Fried rice</h4>
-                <p class="food-price">Rs.150</p>
-                <p class="food-detail"> Hot Schezwan Fried rice with hot sauce</p>
-                <br>
-                <a href="#" class="button button-primary">Order Now</a>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="Food-menu-box">
-            <div class="food-menu-img">
-                <img src="images/pasta.png" alt="Garlic Naan" class="img-responsive img-curve">
-            </div>
-            <div class="food-menu-desc">
-                <h4>Pink Sauce Pasta</h4>
-                <p class="food-price">Rs.180</p>
-                <p class="food-detail">Pink sauce pasta with authentic italian herbs </p>
-                <br>
-                <a href="#" class="button button-primary">Order Now</a>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="Food-menu-box">
-            <div class="food-menu-img">
-                <img src="images/sundae.png" alt="Garlic Naan" class="img-responsive img-curve">
-            </div>
-            <div class="food-menu-desc">
-                <h4>Tutti Frutti Sundae</h4>
-                <p class="food-price">Rs.80</p>
-                <p class="food-detail">Tutti frutti sundae with burst of fruity flavours </p>
-                <br>
-                <a href="#" class="button button-primary">Order Now</a>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="Food-menu-box">
-            <div class="food-menu-img">
-                <img src="images/dosa.png" alt="Garlic Naan" class="img-responsive img-curve">
-            </div>
-            <div class="food-menu-desc">
-                <h4>Garlic Naan</h4>
-                <p class="food-price">Rs.22/piece</p>
-                <p class="food-detail">spicy Gralic butter Naan </p>
-                <br>
-                <a href="#" class="button button-primary">Order Now</a>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="clearfix"></div>
-    </div>
+<!-- <section class="food-menu">
+    <h1>A pure CSS carousel</h1>
+<h2>Scroll Paging<h2>
+<div class="carousel" id="test1">
+	<input type="radio" name="item" value="1" checked>
+	<div>
+    <img src="http://lorempixel.com/600/350/food/1/">
+	</div>
+
+	<input type="radio" name="item" value="2">
+	<div>
+     <img src="http://lorempixel.com/600/350/food/2/">
+	</div>
+
+	<input type="radio" name="item" value="3">
+	<div>
+     <img src="http://lorempixel.com/600/350/food/3/" >
+	</div>
+
+	<input type="radio" name="item" value="4">
+	<div>
+		<img src="http://lorempixel.com/600/350/food/4/">
+	</div>
+</div>
+
+<h2>Disolve Paging<h2>
+<div class="carousel" id="test2">
+	<input type="radio" name="item2" value="1" checked>
+	<div>
+    <img src="http://lorempixel.com/600/350/food/1/">
+	</div>
+
+	<input type="radio" name="item2" value="2">
+	<div>
+     <img src="http://lorempixel.com/600/350/food/2/">
+	</div>
+
+	<input type="radio" name="item2" value="3">
+	<div>
+     <img src="http://lorempixel.com/600/350/food/3/" >
+	</div>
+
+	<input type="radio" name="item2" value="4">
+	<div>
+		<img src="http://lorempixel.com/600/350/food/4/">
+	</div>
+</div>
+
+<h2>Instant Paging<h2>
+<div class="carousel" id="test3">
+	<input type="radio" name="item3" value="1" checked>
+	<div>
+    <img src="http://lorempixel.com/600/350/food/1/">
+	</div>
+
+	<input type="radio" name="item3" value="2">
+	<div>
+     <img src="http://lorempixel.com/600/350/food/2/">
+	</div>
+
+	<input type="radio" name="item3" value="3">
+	<div>
+     <img src="http://lorempixel.com/600/350/food/3/" >
+	</div>
+
+	<input type="radio" name="item3" value="4">
+	<div>
+		<img src="http://lorempixel.com/600/350/food/4/">
+	</div>
+</div>
 </section> 
-<!--food menu section ends here-->  
+<--food menu section ends here-->  
 <!--Social section starts here-->  
 <section class="social">
     <div class="container">
@@ -174,7 +244,7 @@
             </li>
         </ul>
     </div>
-</section>
+</section> 
 <!--Social section ends here--> 
 <!--footer section starts here--> 
 <section class="footer">
